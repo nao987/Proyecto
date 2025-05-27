@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Dreams - Guarder�a</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            transition: background-color 0.3s ease;
+        }
+
+        header {
+            background-color: #ffb3cc;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease;
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #ff80ab;
+        }
+		
+
+        .boton {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #ff80ab;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 30px;
+        }
+
+        .boton:hover {
+            background-color: #ff4d77;
+            transform: translateY(-3px);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .introduccion {
+            background-color: #ffebf0;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .introduccion h2 {
+            color: #ff80ab;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .introduccion p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .botones-navegacion {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .botones-navegacion a {
+            transition: transform 0.3s ease;
+        }
+
+        .botones-navegacion a:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background-color: #ffb3cc;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            color: #fff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            padding: 15px;
+            border: 1px solid #ffb3cc;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #ffb3cc;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #fff0f5;
+        }
+
+        table tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+		
+      <h1>
+        <nav><img src="TITULOGUARDERIA.png" width="759" height="337" alt=""/> </nav>
+      </h1>
+      <nav>
+      <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="masobresweetdreams.html">Informacion</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="actividades.html">Actividades</a></li>
+          <li><a href="testimonios.html">Testimonios</a></li>
+          <li><a href="contactanos.html">Contacto</a></li>
+        </ul>
+        </nav>
+</header>
+    <marquee behavior="scroll" direction="left" style="background-color:#ffccdd; color:#d6336c; font-weight:bold; padding: 10px; font-size: 1.3em; border-radius: 10px; margin-top: 40px;">
+        🎉 ¡Inscripciones abiertas todo el año! Visítanos y conoce nuestras instalaciones. 🌈
+    </marquee>
+<main>
+    <section class="introduccion">
+        <h2>Bienvenidos a Sweet Dreams</h2>
+        <p>En Sweet Dreams nos encargamos de brindar un ambiente seguro, cálido y divertido para tus pequeños. Con nosotros, ellos aprenderán y crecerán de una manera feliz y saludable.</p>
+        <a href="masobresweetdreams.html" class="boton">Saber más sobre nosotros</a>
+    </section>
+
+    <div class="botones-navegacion">
+        <a href="masobresweetdreams.html" class="boton">Información</a>
+        <a href="servicios.html" class="boton">Servicios</a>
+        <a href="actividades.html" class="boton">Actividades</a>
+        <a href="testimonios.html" class="boton">Testimonios</a>
+        <a href="contactanos.html" class="boton">Contacto</a>
+    </div>
+
+   
+
+    <!-- Tabla promocional -->
+    <section style="margin-top: 40px; background-color:#ffe6ee; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+      <h2 style="color:#d6336c; text-align:center; margin-bottom: 20px;">Empresas Amigas</h2>
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <th>Servicios</th>
+          <th>Contacto</th>
+        </tr>
+        <tr>
+          <td><img src="Captura de pantalla 2025-05-27 134237.png" width="622" height="137" alt=""/></td>
+          <td>Venta y distribucion de flores</td>
+          <td>Boutemssa@gmail.com</td>
+        </tr>
+        <tr>
+          <td><img src="IMG_6116.jpeg" width="638" height="150" alt=""/></td>
+          <td>Venta y distribucion de ropa </td>
+          <td>JK@gmail.com</td>
+        </tr>
+      </table>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Sweet Dreams Guardería.</p>
+</footer>
+</body>
+</html>

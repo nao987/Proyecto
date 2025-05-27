@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Actividades - Sweet Dreams</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      line-height: 1.6;
+      padding: 0;
+      margin: 0;
+      transition: background-color 0.3s ease;
+    }
+
+    header {
+      background-color: #ffb3cc;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.5s ease;
+    }
+
+    header h1 {
+      font-size: 3em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      animation: fadeIn 1s ease-out;
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    header nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+
+    header nav ul li a:hover {
+      color: #ff80ab;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .actividades-section {
+      background-color: #ffebf0;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 30px;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .actividades-section h2 {
+      color: #ff80ab;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .actividades-section p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .actividades-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px 0;
+    }
+
+    .actividad-item {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .actividad-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .actividad-item h3 {
+      font-size: 1.8em;
+      color: #ff80ab;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #ffb3cc;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer p {
+      color: #fff;
+    }
+
+    marquee {
+      background-color: #ffccdd;
+      color: #d6336c;
+      font-weight: bold;
+      padding: 10px;
+      font-size: 1.3em;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><img src="TITULOGUARDERIA.png" width="850" height="368" alt=""/></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="masobresweetdreams.html">Informacion</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="actividades.html">Actividades</a></li>
+        <li><a href="testimonios.html">Testimonios</a></li>
+        <li><a href="contactanos.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <marquee behavior="scroll" direction="left">
+    🎉 ¡Inscripciones abiertas todo el año! Visítanos y conoce nuestras instalaciones. 🌈
+  </marquee>
+
+  <main>
+    <section class="actividades-section">
+      <h2>Actividades divertidas para los niños</h2>
+      <p>En Sweet Dreams, nos aseguramos de que los niños estén constantemente estimulados a través de diversas actividades.</p>
+      <div class="actividades-list">
+        <div class="actividad-item">
+          <h3>Manualidades</h3>
+          <p>Fomentamos la creatividad y destreza manual a través de actividades artísticas y manuales.</p>
+        </div>
+        <div class="actividad-item">
+          <h3>Juegos Educativos</h3>
+          <p>Juegos que fomentan el aprendizaje mientras los niños se divierten.</p>
+        </div>
+        <div class="actividad-item">
+          <h3>Ejercicio y Movimiento</h3>
+          <p>Promovemos el ejercicio físico con actividades al aire libre y juegos en equipo.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sweet Dreams Guardería.</p>
+  </footer>
+</body>
+</html>
